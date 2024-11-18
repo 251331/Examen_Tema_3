@@ -1,22 +1,15 @@
 class Vehiculo:
     def __init__(self):
         self._marca = ""
-        self._modelo = ""
         self._anio = ""
         self._color = ""
         self._peso = 0
         self._longitud = 0.0
         self._altura = 0
         self._ancho = 0
-        self._garantia = ""
-        self._asistencia_conductor = ""
-        self._tipo_carroceria = ""
         self._material_carroceria = ""
         self._capacidad_carga = 0
         self._capacidad_pasajeros = ""
-        self._catidad_llantas = 0
-
-
 
     # Métodos getters y setters
     def get_marca(self):
@@ -24,12 +17,6 @@ class Vehiculo:
 
     def set_marca(self, marca):
         self._marca = marca
-
-    def get_modelo(self):
-        return self._modelo
-
-    def set_modelo(self, modelo):
-        self._modelo = modelo
 
     def get_anio(self):
         return self._anio
@@ -67,24 +54,6 @@ class Vehiculo:
     def set_ancho(self, ancho):
         self._ancho = ancho
 
-    def get_garantia(self):
-        return self._garantia
-
-    def set_garantia(self, garantia):
-        self._garantia = garantia
-
-    def get_asistencia_conductor(self):
-        return self._asistencia_conductor
-
-    def set_asistencia_conductor(self, asistencia_conductor):
-        self._asistencia_conductor = asistencia_conductor
-
-    def get_tipo_carroceria(self):
-        return self._tipo_carroceria
-
-    def set_tipo_carroceria(self, tipo_carroceria):
-        self._tipo_carroceria = tipo_carroceria
-
     def get_material_carroceria(self):
         return self._material_carroceria
 
@@ -103,27 +72,16 @@ class Vehiculo:
     def set_capacidad_carga(self, capacidad_carga):
         self._capacidad_carga = capacidad_carga
 
-    def get_catidad_llantas(self):
-        return self._catidad_llantas
-
-    def set_catidad_llantas(self, catidad_llantas):
-        self._catidad_llantas = catidad_llantas
-
-
     def mostrar_Informacion_Vehiculo(self):
         return [
             f"Marca del Vehiculo: {self._marca}",
-            f"Modelo del Vehiculo: {self._modelo}",
             f"Año de Fabriacion: {self._anio}",
             f"Color del Vehiculo: {self._color}",
             f"Peso del Vehiculo en Kg: {self._peso}",
             f"Longitud del Vehiculo metros: {self._longitud}",
             f"Altura del Vehiculo en metros: {self._altura}",
             f"Ancho del Vehiculo metros: {self._ancho}",
-            f"Garantia del Vehiculo: {self._garantia}",
-            f"Tipo Carroceria: {self._tipo_carroceria}",
             f"Material Carroceria: {self._material_carroceria}",
             f"Capacidad Pasajeros: {self._capacidad_pasajeros}",
-            f"Capacidad Carga en Kg: {self._capacidad_carga}",
-            f"Catidad Llantas: {self._catidad_llantas}"
+            f"Capacidad Carga en Kg: {self._capacidad_carga}"
         ]
