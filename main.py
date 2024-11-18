@@ -15,7 +15,7 @@ def main():
     automovil.set_altura(1455)
     automovil.set_ancho(1780)
     automovil.set_garantia("3 años")
-    automovil.set_material_carroceria("Acero")
+    automovil.set_material_carroceria("Lamina")
     automovil.set_capacidad_pasajeros("5 personas")
     automovil.set_capacidad_carga(425)
     automovil.set_numero_cilindros(4)
@@ -129,9 +129,9 @@ def main():
     sedan.set_material_llantas("Caucho")
     sedan.set_diferencial_llantas("HT950")
     sedan.set_material_rines("Aluminio")
-    sedan.set_anclaje_asiento_pasajero("Cojin de Gel")
     sedan.set_sistema_turbo("Secuencial")
     sedan.set_espejos_retrovisores("2")
+    sedan.set_techo_solar("Spoiler")
 
     print("Información de la Sedan:")
     for info in sedan.mostrar_Informacion_Sedan():
