@@ -10,7 +10,7 @@ class Motorizado(Vehiculo):
         self._consumo_combustible_motor = 0.0  # En L/100 km
         self._grado_anticongelante = 0.0
         self._numero_serie_motor = ""
-        self._frecuencia_aceite = 0
+        self._tipo_aceite = 0
 
     # Métodos getters y setters para cada atributo
 
@@ -57,11 +57,11 @@ class Motorizado(Vehiculo):
         self._numero_serie_motor = numero_serie_motor
 
 
-    def get_frecuencia_aceite(self):
-        return self._frecuencia_aceite
+    def get_tipo_aceite(self):
+        return self._tipo_aceite
 
-    def set_frecuencia_aceite(self, frecuencia_aceite):
-        self._frecuencia_aceite = frecuencia_aceite
+    def set_tipo_aceite(self, tipo_aceite):
+        self._tipo_aceite = tipo_aceite
 
 
     def mostrar_Informacion_Motorizado(self):
@@ -70,10 +70,10 @@ class Motorizado(Vehiculo):
             *parent_info,
             f"Numero de cilindros: {self._numero_cilindros}",
             f"Potencia motor: {self._potencia_motor}",
-            f"Aceleracia motor: {self._aceleracion_0_100}",
+            f"Aceleracion con la que corre el motor: {self._aceleracion_0_100}",
             f"Tipo de combustible que maneja: {self._tipo_combustible}",
             f"Consumo combustible em litros: {self._consumo_combustible_motor}",
             f"Grado del anticongelante que utiliza: {self._grado_anticongelante}",
-            f"Numero de serie: {self._numero_serie_motor}",
-            f"Frecuencia del tipo de Aceite: {self._frecuencia_aceite}"
+            f"Numero de serie del motor: {self._numero_serie_motor}",
+            f"Tipo de lubricante que utiliza: {self._tipo_aceite}"
         ]

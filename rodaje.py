@@ -4,7 +4,6 @@ class Rodaje:
         self._tamano_llantas = ""
         self._presion_llantas = 0.0
         self._material_llantas = ""
-        self._diferencial = ""
         self._material_rines = ""
 
     def get_tipo_llantas(self):
@@ -25,12 +24,6 @@ class Rodaje:
     def set_presion_llantas(self, presion_llantas):
         self._presion_llantas = presion_llantas
 
-    def get_diferencial_llantas(self):
-        return self._diferencial
-
-    def set_diferencial_llantas(self, diferencial_llantas):
-        self._diferencial = diferencial_llantas
-
     def get_material_llantas(self):
         return self._material_llantas
 
@@ -49,6 +42,5 @@ class Rodaje:
             f"Tamaño de llantas: {self._tamano_llantas}",
             f"Presion llantas: {self._presion_llantas}",
             f"Material llantas: {self._material_llantas}",
-            f"Diferencial llantas: {self._diferencial}",
             f"Material rines: {self._material_rines}"
         ]

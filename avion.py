@@ -5,7 +5,7 @@ class Avion(Motorizado):
         super().__init__()
         self._envergadura = 0.0
         self._altitud_maxima = 0.0
-        self._sistema_oxigeno = ""
+        self._sistema_oxigeno = 0
         self._pista_minima_despegue = 0.0
         self._pista_minima_aterrizaje = 0.0
 
@@ -45,8 +45,8 @@ class Avion(Motorizado):
         return [
             *motorizado_info,
             f"Envergadura en mts: {self._envergadura}",
-            f"Altitud maxima em mts: {self._altitud_maxima}",
-            f"Maneja Sistema oxigeno: {self._sistema_oxigeno}",
+            f"Altitud maxima en mts sobre nivel del mar: {self._altitud_maxima}",
+            f"Cuantos Sistemas oxigeno maneja: {self._sistema_oxigeno}",
             f"Pista Minima Despegue: {self._pista_minima_despegue}",
             f"Pista Minima Aterrizaje: {self._pista_minima_aterrizaje}",
         ]

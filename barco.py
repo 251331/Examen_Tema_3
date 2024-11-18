@@ -4,10 +4,10 @@ class Barco(Motorizado):
     def __init__(self):
         super().__init__()
         self._camarotes = 0
-        self._equipo_salvavidas = False
+        self._equipo_salvavidas = 0
         self._sistema_navegacion = ""
         self._tipo_poniente = ""
-        self._sistema_vapor = False
+        self._sistema_vapor = ""
 
     def get_camarotes(self):
         return self._camarotes
@@ -47,8 +47,8 @@ class Barco(Motorizado):
         return [
             *motorizado_info,
             f"Total de Camarotes: {self._camarotes}",
-            f"Cuenta con Equipo salvavidas: {self._equipo_salvavidas}",
-            f"Sistema navegacion: {self._sistema_navegacion}",
-            f"Tipo de poniente: {self._tipo_poniente}",
-            f"Sistema de vapor: {self._sistema_vapor}",
+            f"Con cuantos Equipos de salvavidas cuenta: {self._equipo_salvavidas}",
+            f"Sistema navegacion que integra: {self._sistema_navegacion}",
+            f"Tipo de poniente que maneja: {self._tipo_poniente}",
+            f"Cuenta con Sistema de vapor?: {self._sistema_vapor}",
         ]

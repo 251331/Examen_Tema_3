@@ -51,7 +51,7 @@ class Automovil(Motorizado, Rodaje):
             *rodaje_info,
             f"Número de puertas: {self._numero_puertas}",
             f"Numero de bolsas aire: {self._numero_bolsas_aire}",
-            f"Cuenta con Asistencia seguro: {self._asistencia_seguro}",
+            f"Cuenta con Asistencia seguro?: {self._asistencia_seguro}",
             f"Garantia del Vehiculo: {self._garantia}",
             f"Espejos retrovisores: {self._espejos_retrovisores}"
         ]
